@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>天天开心 - Happy Everyday</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☀️</text></svg>">
+</head>
+<body>
+  <div class="header">
+    <img src="images/banner.jpg" alt="Happy Banner" class="banner-img">
+    <div class="header-text">
+      <h1>天天开心</h1>
+      <p>希望你每天都有甜甜的好心情 🌟</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Quote Card -->
+    <div class="card">
+      <div class="card-title">
+        <span>📜</span> 每日开心语录
+      </div>
+      <div class="card-content" id="quoteContent">
+        点击按钮获取一句温暖的小语录~
+      </div>
+      <button class="btn" id="quoteBtn">换一句开心语录</button>
+    </div>
+
+    <!-- Joke Card -->
+    <div class="card">
+      <div class="card-title">
+        <span>😄</span> 轻松小笑话
+      </div>
+      <div class="card-content" id="jokeContent">
+        点击按钮来个小笑话，赶走不开心~
+      </div>
+      <button class="btn btn-joke" id="jokeBtn">来个小笑话</button>
+    </div>
+
+    <!-- Moments Card -->
+    <div class="card">
+      <div class="card-title">
+        <span>✍️</span> 开心小事打卡
+      </div>
+      <p style="color: #666; margin-bottom: 15px;">记录你今天的开心小事，也来看看大家的美好瞬间吧~</p>
+      <form id="momentForm" class="form-group">
+        <input type="text" id="momentInput" class="form-input" placeholder="今天有什么开心的事呀？比如：今天喝到了好喝的奶茶~" maxlength="100">
+        <button type="submit" class="btn">提交我的开心小事</button>
+      </form>
+      <div class="moments-list" id="momentsList">
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
